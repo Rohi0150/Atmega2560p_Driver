@@ -2,7 +2,6 @@
 int k_val[4][4]= {{1,2,3,'+'},{4,5,6,'-'},{7,8,9,'*'},{'/',0,'%','='}};
 
 int keypad_scan(){
-
   for(int col = 0; col < 4; col++){
     out_port(F,1<<col);
     delayt(0.05);   
