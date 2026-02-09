@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "author": "ROHITH A",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": -95.4, "left": -195.6, "attrs": {} },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -462.8,
+      "left": 255.2,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 216,
+      "left": 66.65,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 216,
+      "left": 76.25,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 216,
+      "left": 85.85,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 216,
+      "left": 95.45,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": 139.38,
+      "left": 437.08,
+      "attrs": { "common": "cathode", "color": "#00ddff" }
+    },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg2",
+      "top": 139.38,
+      "left": 581.08,
+      "attrs": { "common": "cathode", "color": "#00ddff" }
+    },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg3",
+      "top": 139.38,
+      "left": 773.08,
+      "attrs": { "common": "cathode", "color": "#00ddff" }
+    },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg4",
+      "top": 139.38,
+      "left": 686.68,
+      "attrs": { "common": "cathode", "color": "#00ddff" }
+    }
+  ],
+  "connections": [
+    [ "mega:A0", "keypad1:R1", "green", [ "v74.1", "h303.9" ] ],
+    [ "mega:A1", "keypad1:R2", "green", [ "v64.5", "h313.6" ] ],
+    [ "mega:A2", "keypad1:R3", "green", [ "v54.9", "h313.7" ] ],
+    [ "mega:A3", "keypad1:R4", "green", [ "v45.3", "h313.55" ] ],
+    [ "mega:A8", "keypad1:C1", "green", [ "v35.7", "h270.15" ] ],
+    [ "mega:A9", "keypad1:C2", "green", [ "v26.1", "h270" ] ],
+    [ "mega:A10", "keypad1:C3", "green", [ "v16.5", "h270.1" ] ],
+    [ "mega:A11", "keypad1:C4", "green", [ "v16.5", "h260.65" ] ],
+    [ "mega:A8", "r1:1", "green", [ "v0" ] ],
+    [ "mega:A9", "r2:1", "green", [ "v0" ] ],
+    [ "mega:A10", "r3:1", "green", [ "v0" ] ],
+    [ "mega:A11", "r4:1", "green", [ "v0" ] ],
+    [ "mega:GND.2", "r1:2", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r2:2", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r3:2", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r4:2", "black", [ "v0" ] ],
+    [ "mega:53", "sevseg1:A", "green", [ "v1.1", "h285.4" ] ],
+    [ "mega:52", "sevseg1:B", "green", [ "v1.1", "h305" ] ],
+    [ "sevseg1:C", "mega:51", "green", [ "v38.4", "h28.8", "v-211.2" ] ],
+    [ "sevseg1:D", "mega:50", "green", [ "v57.6", "h76.8", "v-230.4" ] ],
+    [
+      "sevseg1:E",
+      "mega:10",
+      "green",
+      [ "v86.4", "h96", "v-268.8", "h-297.6", "v-288", "h-278.4" ]
+    ],
+    [ "sevseg1:F", "mega:11", "green", [ "v-133.56", "h-220.8", "v-249.6", "h-278.4", "v9.6" ] ],
+    [ "sevseg1:G", "mega:12", "green", [ "v-104.76", "h-220.8", "v-249.6", "h-278.4" ] ],
+    [
+      "sevseg1:DP",
+      "mega:13",
+      "green",
+      [ "v9.6", "h76.8", "v-240", "h-307.2", "v-278.4", "h-307.2" ]
+    ],
+    [ "sevseg1:A", "sevseg2:A", "green", [ "v-27.96", "h134.4" ] ],
+    [ "sevseg1:B", "sevseg2:B", "green", [ "v-18.36", "h144" ] ],
+    [ "sevseg1:F", "sevseg2:F", "green", [ "v-47.16", "h134.4" ] ],
+    [ "sevseg1:G", "sevseg2:G", "green", [ "v-37.56", "h134.4" ] ],
+    [ "sevseg1:DP", "sevseg2:DP", "green", [ "v9.6", "h144" ] ],
+    [ "sevseg1:C", "sevseg2:C", "green", [ "v38.4", "h153.6" ] ],
+    [ "sevseg1:D", "sevseg2:D", "green", [ "v57.6", "h144" ] ],
+    [ "sevseg1:E", "sevseg2:E", "green", [ "v86.4", "h153.6" ] ],
+    [ "sevseg2:B", "sevseg4:B", "green", [ "v-18.36", "h105.6" ] ],
+    [ "sevseg4:B", "sevseg3:B", "green", [ "v-18.36", "h86.4" ] ],
+    [ "sevseg2:A", "sevseg4:A", "green", [ "v-27.96", "h96" ] ],
+    [ "sevseg4:A", "sevseg3:A", "green", [ "v-27.96", "h86.4" ] ],
+    [ "sevseg2:F", "sevseg4:F", "green", [ "v-47.16", "h105.6" ] ],
+    [ "sevseg4:F", "sevseg3:F", "green", [ "v-47.16", "h76.8" ] ],
+    [ "sevseg2:G", "sevseg4:G", "green", [ "v-37.56", "h105.6" ] ],
+    [ "sevseg4:G", "sevseg3:G", "green", [ "v-37.56", "h67.2" ] ],
+    [ "sevseg2:DP", "sevseg4:DP", "green", [ "v9.6", "h96" ] ],
+    [ "sevseg4:DP", "sevseg3:DP", "green", [ "v9.6", "h86.4" ] ],
+    [ "sevseg2:C", "sevseg4:C", "green", [ "v38.4", "h96" ] ],
+    [ "sevseg4:C", "sevseg3:C", "green", [ "v38.4", "h67.2" ] ],
+    [ "sevseg2:D", "sevseg4:D", "green", [ "v57.6", "h115.2" ] ],
+    [ "sevseg2:D", "sevseg3:D", "green", [ "v57.6", "h201.6" ] ],
+    [ "sevseg2:E", "sevseg4:E", "green", [ "v86.4", "h115.2" ] ],
+    [ "sevseg2:E", "sevseg3:E", "green", [ "v86.4", "h192" ] ],
+    [ "mega:22", "sevseg3:COM.2", "green", [ "v1.1", "h621.8" ] ],
+    [ "mega:24", "sevseg2:COM.2", "green", [ "v10.55", "h420.2" ] ],
+    [ "mega:25", "sevseg1:COM.2", "green", [ "v68.15", "h304.6" ] ],
+    [ "mega:23", "sevseg4:COM.2", "green", [ "v1.1", "h506.2" ] ]
+  ],
+  "dependencies": {}
+}

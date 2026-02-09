@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "author": "ROHITH A",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": -76.2, "left": -13.2, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 457.2,
+      "left": 339.8,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 399.6,
+      "left": 339.8,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-led", "id": "led3", "top": 102, "left": 339.8, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": 351.6,
+      "left": 339.8,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led5",
+      "top": 303.6,
+      "left": 339.8,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-led", "id": "led6", "top": 150, "left": 339.8, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led7", "top": 246, "left": 339.8, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led8", "top": 198, "left": 339.8, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 138.35,
+      "left": 288,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 435.95,
+      "left": 278.4,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 493.55,
+      "left": 278.4,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 387.95,
+      "left": 278.4,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r5",
+      "top": 339.95,
+      "left": 278.4,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r6",
+      "top": 282.35,
+      "left": 288,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r7",
+      "top": 234.35,
+      "left": 288,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r8",
+      "top": 186.35,
+      "left": 288,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "mega:22", "led3:A", "green", [ "v-27.7", "h113", "v220.8" ] ],
+    [ "mega:23", "led6:A", "green", [ "v1.1", "h83.8", "v240" ] ],
+    [ "led8:A", "mega:24", "green", [ "v0", "h57.6", "v-278.4" ] ],
+    [ "mega:25", "led7:A", "green", [ "v0.95", "h74.2", "v336" ] ],
+    [ "mega:26", "led5:A", "green", [ "v1.05", "h55.4", "v364.8" ] ],
+    [ "mega:27", "led4:A", "green", [ "v1.05", "h55", "v432" ] ],
+    [ "mega:28", "led2:A", "green", [ "v1.15", "h45.8", "v460.8" ] ],
+    [ "mega:29", "led1:A", "green", [ "v1.15", "h26.2", "v518.4" ] ],
+    [ "led3:C", "r1:2", "green", [ "v0" ] ],
+    [ "led6:C", "r8:2", "green", [ "v0" ] ],
+    [ "led8:C", "r7:2", "green", [ "v0" ] ],
+    [ "led7:C", "r6:2", "green", [ "v0" ] ],
+    [ "led5:C", "r5:2", "green", [ "v0" ] ],
+    [ "led4:C", "r4:2", "green", [ "v0" ] ],
+    [ "led2:C", "r2:2", "green", [ "v0" ] ],
+    [ "led1:C", "r3:2", "green", [ "v0" ] ],
+    [ "mega:GND.2", "r1:1", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r8:1", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r7:1", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r6:1", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r5:1", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r4:1", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r2:1", "black", [ "v0" ] ],
+    [ "mega:GND.2", "r3:1", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

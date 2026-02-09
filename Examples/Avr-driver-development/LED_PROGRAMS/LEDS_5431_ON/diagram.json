@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "author": "ROHITH A",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-mega",
+      "id": "mega",
+      "top": -40,
+      "left": -12.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -3.6,
+      "left": 311,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 54,
+      "left": 321,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 130.8,
+      "left": 311.4,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": 188.4,
+      "left": 311,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 32.75,
+      "left": 355.2,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 224.75,
+      "left": 355.2,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 167.15,
+      "left": 355.2,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 90.35,
+      "left": 355.2,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "led1:A", "mega:3", "green", [ "v0" ] ],
+    [ "led2:A", "mega:2", "green", [ "v0" ] ],
+    [ "mega:5", "led3:A", "green", [ "h38.4", "v91.7" ] ],
+    [ "mega:1", "led4:A", "green", [ "h28.8", "v120.9" ] ],
+    [ "mega:GND.2", "r1:2", "black", [ "h50.7", "v-113.05", "h67.2" ] ],
+    [ "mega:GND.2", "r4:2", "black", [ "h50.7", "v-113.05", "h268.8" ] ],
+    [ "mega:GND.2", "r3:2", "black", [ "h50.7", "v-113.05", "h268.8" ] ],
+    [ "mega:GND.2", "r2:2", "black", [ "h50.7", "v-113.05", "h268.8", "v9.6" ] ],
+    [ "led1:C", "r1:1", "green", [ "v0" ] ],
+    [ "led2:C", "r4:1", "green", [ "v0" ] ],
+    [ "led3:C", "r3:1", "green", [ "v0" ] ],
+    [ "led4:C", "r2:1", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

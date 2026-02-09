@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "author": "ROHITH A",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-mega",
+      "id": "mega",
+      "top": -30.4,
+      "left": -12.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 274.8,
+      "left": 186.2,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 313.2,
+      "left": 186.2,
+      "attrs": { "color": "limegreen" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 361.2,
+      "left": 186.2,
+      "attrs": { "color": "cyan" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led4",
+      "top": 236.4,
+      "left": 186.2,
+      "attrs": { "color": "purple" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 397.55,
+      "left": 134.4,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 349.55,
+      "left": 134.4,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 311.15,
+      "left": 134.4,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 272.75,
+      "left": 134.4,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "mega:22", "led3:A", "green", [ "v0" ] ],
+    [ "led3:C", "r1:2", "green", [ "v0" ] ],
+    [ "mega:23", "led2:A", "green", [ "h18.1", "v122.2" ] ],
+    [ "led2:C", "r2:2", "green", [ "v0" ] ],
+    [ "mega:24", "led1:A", "green", [ "v0" ] ],
+    [ "led1:C", "r3:2", "green", [ "v0" ] ],
+    [ "mega:25", "led4:A", "green", [ "h-10.55", "v35.8" ] ],
+    [ "led4:C", "r4:2", "green", [ "v0" ] ],
+    [ "mega:GND.2", "r4:1", "black", [ "h-74.1", "v213.35" ] ],
+    [ "mega:GND.2", "r3:1", "black", [ "h-74.1", "v261.35" ] ],
+    [ "mega:GND.2", "r2:1", "black", [ "h-74.1", "v309.35" ] ],
+    [ "mega:GND.2", "r1:1", "black", [ "h-74.1", "v347.75" ] ]
+  ],
+  "dependencies": {}
+}
