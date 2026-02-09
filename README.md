@@ -1,4 +1,4 @@
-# ATmega2560 Drivers and Programs 
+# ATmega2560 Drivers and Examples
 
 Driver implementations and example programs for the ATmega2560 microcontroller focusing on peripheral interfacing and low-level hardware control.
 
@@ -8,10 +8,10 @@ Driver implementations and example programs for the ATmega2560 microcontroller f
 
 The [Drivers](./Drivers) folder contains low-level driver implementations for ATmega2560 peripherals:
 
-- [GPIO](./Drivers/GPIO) - General Purpose Input/Output operations
-- [IOMAP](./Drivers/IOMAP) - Input/Output mapping configurations
-- [7SEG](./Drivers/7SEG) - Seven Segment Display driver
-- [Keypad](./Drivers/Keypad) - Matrix keypad interface driver
+- [gpio.h](./Drivers/gpio.h) - General Purpose Input/Output operations
+- [iomap.h](./Drivers/iomap.h) - Input/Output mapping configurations
+- [7seg.h](./Drivers/7seg.h) - Seven Segment Display driver
+- [keypad.h](./Drivers/keypad.h) - Matrix keypad interface driver
 
 These drivers provide hardware abstraction for easier peripheral control.
 
