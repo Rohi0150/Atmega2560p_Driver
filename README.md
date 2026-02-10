@@ -33,28 +33,25 @@ The [Examples](./Examples) folder contains sample programs showing how to use th
 
 ## Implementation Examples
 
-- [Calculator](./Calculator) - Calculator with keypad and 7-segment display
-- [Headers](./Headers) - ATmega2560p register definitions
-- [Keypad](./Keypad) - Numeric keypad (0-9) interface
-- [LED_PROGRAMS](./LED_PROGRAMS) - LED control programs
-- [LIFT](./LIFT) - Multi-floor elevator control system
-- [Locker](./Locker) - Password-based digital lock
+- [Calculator](./Examples/Atmega2560p-application-projects/Calculator) - Calculator with keypad and 7-segment display
+- [Keypad](./Examples/BalajeeSir-Example-Programs/Keypad) - Numeric keypad (0-9) interface
+- [LED_PROGRAMS](./Examples/BalajeeSir-Example-Programs/LED_PROGRAMS) - LED control programs
+- [LIFT](./Examples/Atmega2560p-application-projects/LIFT) - Multi-floor elevator control system
+- [Locker](./Examples/Atmega2560p-application-projects/Locker) - Password-based digital lock
 
 ## Technical Skills
 
 Written in C with focus on:
 - Embedded C programming
 - Hardware abstraction layer design
-- Peripheral driver development
-- Interrupt handling
 - Register-level programming
 - Memory-mapped I/O
 
 **Development Tools:**
-- AVR-GCC Compiler
-- AVRDUDE Programmer
 - Wokwi Simulator
 - Git
+- AVR-GCC Compiler
+- AVRDUDE Programmer
 
 ---
 
