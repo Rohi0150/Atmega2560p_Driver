@@ -131,10 +131,3 @@ void delay_ms(uint16_t ms)
   timer1_comp_delay(ms);
   timer1_stop();
 }
-//delay in us 
-void delay_us(uint16_t us)
-{
-  timer1_ctc((us * 2 ) - 1, TIMER1_PRES_8); // 8_Presclar-> 0.5us *2 = 1us 
-  timer1_comp_delay(1);
-  timer1_stop();
-}
